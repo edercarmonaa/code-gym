@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FC46AE7B2FC820C700B888AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC46AE7A2FC820C700B888AD /* main.m */; };
+		FC46AE822FC8215400B888AD /* Ejercicio001.m in Sources */ = {isa = PBXBuildFile; fileRef = FC46AE812FC8215400B888AD /* Ejercicio001.m */; };
+		FC46AE862FC82B3500B888AD /* Ejercicio002.m in Sources */ = {isa = PBXBuildFile; fileRef = FC46AE852FC82B3500B888AD /* Ejercicio002.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		FC46AE772FC820C700B888AD /* code-gym */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "code-gym"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC46AE7A2FC820C700B888AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC46AE812FC8215400B888AD /* Ejercicio001.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ejercicio001.m; sourceTree = "<group>"; };
+		FC46AE842FC8254800B888AD /* Ejercicios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ejercicios.h; sourceTree = "<group>"; };
+		FC46AE852FC82B3500B888AD /* Ejercicio002.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ejercicio002.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				FC46AE7A2FC820C700B888AD /* main.m */,
+				FC46AE812FC8215400B888AD /* Ejercicio001.m */,
+				FC46AE852FC82B3500B888AD /* Ejercicio002.m */,
+				FC46AE842FC8254800B888AD /* Ejercicios.h */,
 			);
 			path = "code-gym";
 			sourceTree = "<group>";
@@ -120,6 +128,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC46AE7B2FC820C700B888AD /* main.m in Sources */,
+				FC46AE822FC8215400B888AD /* Ejercicio001.m in Sources */,
+				FC46AE862FC82B3500B888AD /* Ejercicio002.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
