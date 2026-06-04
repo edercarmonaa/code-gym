@@ -1,12 +1,24 @@
 # Code Gym
 
-Repositorio de práctica para desarrollar ejercicios de programación usando **Objective-C** desde **Xcode**.
+Repositorio personal de práctica para resolver retos de programación y fortalecer la lógica paso a paso.
 
-**Code Gym** funciona como un gimnasio mental de programación: cada ejercicio está pensado para practicar lógica, resolver problemas pequeños y fortalecer bases de programación paso a paso.
+**Code Gym** funciona como un gimnasio mental de programación: cada ejercicio está pensado para entrenar la mente, practicar conceptos fundamentales y mejorar la forma de resolver problemas mediante código.
 
 ## Objetivo del proyecto
 
-El objetivo principal es mejorar la agilidad mental y la lógica de programación mediante ejercicios cortos, separados por archivo y fáciles de ejecutar desde `main.m`.
+El objetivo principal de este repositorio es mejorar mi agilidad mental, lógica de programación y capacidad para resolver problemas mediante ejercicios cortos, claros y organizados.
+
+Aquí subiré código que resuelve retos de programación, ejercicios de práctica, problemas de lógica y pequeños desafíos que me ayuden a mejorar como desarrollador.
+
+## Aclaración sobre los retos
+
+Los retos y ejercicios resueltos en este repositorio pueden provenir de distintos sitios web, plataformas de práctica, cursos, libros o recursos de aprendizaje.
+
+En este repositorio solo se suben mis soluciones personales, implementaciones y prácticas realizadas con fines de entrenamiento y aprendizaje.
+
+El crédito de los enunciados originales, ideas o retos pertenece a sus respectivos autores o plataformas.
+
+## ¿Qué se practica en este repositorio?
 
 En este proyecto se practican conceptos como:
 
@@ -21,23 +33,20 @@ En este proyecto se practican conceptos como:
 - Comparación de caracteres
 - Operadores lógicos
 - Estructuras de control
+- Algoritmos básicos
+- Resolución de problemas
+- Buenas prácticas de código
 
-## Tecnología utilizada
+## Lenguajes utilizados
 
-- Objective-C
-- Xcode
-- macOS
-- Git
-- GitHub
+Este repositorio podrá incluir ejercicios en diferentes lenguajes de programación.
 
-## Estructura del proyecto
+## Estructura inicial del proyecto
 
 ```text
 CodeGym/
 │
-├── main.m
-├── Ejercicios.h
-├── Ejercicio001.m
-├── Ejercicio002.m
-├── Ejercicio003.m
+├── Objective-C/
+├── SQL/
+│
 └── README.md
