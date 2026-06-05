@@ -1,2 +1,93 @@
+/*Query a list of CITY and STATE from the STATION table.
 
+The STATION table is described as follows:
+id: int
+city: varchar(21)
+state: varchar(2)
+latitude: double
+longitude: double   
 
+where LAT_N is the northern latitude and LONG_W is the western longitude.
+*/
+
+SELECT CITY, STATE FROM STATION
+
+/*
+Query a list of CITY names from STATION for cities that have an even ID number. Print the results in any order, but exclude duplicates from the answer.
+The STATION table is described as follows:
+*/
+
+SELECT DISTINCT(CITY) FROM STATION
+WHERE MOD(ID,2) = 0
+ORDER BY CITY ASC
+
+/*Find the difference between the total number of CITY entries in the 
+table and the number of distinct CITY entries in the table.*/
+
+SELECT COUNT(CITY)- COUNT(DISTINCT(CITY)) FROM STATION 
+/* Query the following two values from the STATION table:
+
+The sum of all values in LAT_N rounded to a scale of  decimal places.
+The sum of all values in LONG_W rounded to a scale of  decimal places.*/
+SELECT ROUND(SUM(LAT_N),2), ROUND(SUM(LONG_W),2)
+FROM STATION
+
+/*Query the two cities in STATION with the shortest and longest CITY names, 
+as well as their respective lengths (i.e.: number of characters in the name). 
+If there is more than one smallest or largest city, choose the one that comes 
+first when ordered alphabetically.*/
+
+SELECT CITY, LENGTH(CITY) FROM STATION 
+GROUP BY CITY
+ORDER BY LENGTH(CITY) ASC, CITY ASC
+limit 1;
+
+SELECT CITY, LENGTH(CITY) FROM STATION 
+GROUP BY CITY
+ORDER BY LENGTH(CITY) DESC, CITY ASC
+limit 1;
+
+/*Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) 
+from STATION. Your result cannot contain duplicates.*/
+
+SELECT DISTINCT(CITY) FROM STATION
+WHERE LEFT(CITY,1) IN ('A','E','I','O','U')
+
+/*Query the list of CITY names ending with vowels (a, e, i, o, u) 
+from STATION. Your result cannot contain duplicates.*/
+
+SELECT DISTINCT(CITY) FROM STATION
+WHERE RIGHT(CITY,1) IN ('A','E','I','O','U')
+
+/*Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u) as 
+both their first and last characters. Your result cannot contain duplicates.*/
+
+SELECT DISTINCT(CITY) FROM STATION
+WHERE RIGHT(CITY,1) IN ('A','E','I','O','U')
+AND LEFT(CITY, 1) IN ('A','E','I','O','U')
+
+/*Query the list of CITY names from STATION that do not start with vowels. 
+Your result cannot contain duplicates.*/
+
+SELECT DISTINCT(CITY) FROM STATION
+WHERE LEFT(CITY,1) NOT IN ('A','E','I','O','U')
+
+/*Query the list of CITY names from STATION that do not end with vowels.
+ Your result cannot contain duplicates.*/
+
+SELECT DISTINCT(CITY) FROM STATION
+WHERE RIGHT(CITY,1) NOT IN ('A','E','I','O','U')
+
+/*Query the list of CITY names from STATION that either do not start with vowels or do not 
+end with vowels. Your result cannot contain duplicates.*/
+
+SELECT DISTINCT(CITY) FROM STATION
+WHERE RIGHT(CITY,1) NOT IN ('A','E','I','O','U')
+OR LEFT(CITY, 1) NOT IN ('A','E','I','O','U')
+
+/*Query the list of CITY names from STATION that do not start with vowels and do not 
+end with vowels. Your result cannot contain duplicates.*/
+
+SELECT DISTINCT(CITY) FROM STATION
+WHERE RIGHT(CITY,1) NOT IN ('A','E','I','O','U')
+AND LEFT(CITY, 1) NOT IN ('A','E','I','O','U')
