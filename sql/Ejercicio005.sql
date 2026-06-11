@@ -19,3 +19,17 @@ The empty cell data for columns with less than the maximum number of names per
 occupation (in this case, the Professor and Actor columns) are filled with NULL 
 values.
 */
+
+SELECT 
+    MAX(CASE WHEN Occupation = 'Doctor' THEN Name ELSE NULL END) AS Doctor,
+    MAX(CASE WHEN Occupation = 'Professor' THEN Name ELSE NULL END) AS Professor,
+    MAX(CASE WHEN Occupation = 'Singer' THEN Name ELSE NULL END) AS Singer,
+    MAX(CASE WHEN Occupation = 'Actor' THEN Name ELSE NULL END) AS Actor
+FROM (
+    SELECT 
+        Name, 
+        Occupation,
+        ROW_NUMBER() OVER(PARTITION BY Occupation ORDER BY Name) as row_num
+    FROM OCCUPATIONS
+) AS ordered_jobs
+GROUP BY row_num;
