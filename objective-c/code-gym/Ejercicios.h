@@ -12,3 +12,6 @@
 @interface Ejercicio002 : NSObject
 + (void)ejecutar;
 @end
+@interface Ejercicio003 : NSObject
++ (void)ejecutar;
+@end
