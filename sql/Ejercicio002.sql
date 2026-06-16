@@ -91,3 +91,10 @@ end with vowels. Your result cannot contain duplicates.*/
 SELECT DISTINCT(CITY) FROM STATION
 WHERE RIGHT(CITY,1) NOT IN ('A','E','I','O','U')
 AND LEFT(CITY, 1) NOT IN ('A','E','I','O','U')
+
+/*
+Query the sum of Northern Latitudes (LAT_N) from STATION having values greater 
+than  and less than . Truncate your answer to  decimal places.
+*/
+select round(sum(LAT_N),4) from STATION
+where lat_n between 38.7880 AND 137.2345
