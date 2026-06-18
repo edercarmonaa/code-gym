@@ -10,7 +10,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        [Ejercicio003 ejecutar];
+        [Ejercicio004 ejecutar];
         
     }
     return 0;

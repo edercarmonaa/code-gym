@@ -10,6 +10,7 @@
 		FC46AE7B2FC820C700B888AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC46AE7A2FC820C700B888AD /* main.m */; };
 		FC46AE822FC8215400B888AD /* Ejercicio001.m in Sources */ = {isa = PBXBuildFile; fileRef = FC46AE812FC8215400B888AD /* Ejercicio001.m */; };
 		FC46AE862FC82B3500B888AD /* Ejercicio002.m in Sources */ = {isa = PBXBuildFile; fileRef = FC46AE852FC82B3500B888AD /* Ejercicio002.m */; };
+		FC7B13762FE3B19F00A8899C /* Ejercicio004.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7B13752FE3B19F00A8899C /* Ejercicio004.m */; };
 		FCFA99A42FE052B0009231B9 /* Ejercicio003.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFA99A32FE052B0009231B9 /* Ejercicio003.m */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		FC46AE812FC8215400B888AD /* Ejercicio001.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ejercicio001.m; sourceTree = "<group>"; };
 		FC46AE842FC8254800B888AD /* Ejercicios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ejercicios.h; sourceTree = "<group>"; };
 		FC46AE852FC82B3500B888AD /* Ejercicio002.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ejercicio002.m; sourceTree = "<group>"; };
+		FC7B13752FE3B19F00A8899C /* Ejercicio004.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ejercicio004.m; sourceTree = "<group>"; };
 		FCFA99A32FE052B0009231B9 /* Ejercicio003.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ejercicio003.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 				FC46AE852FC82B3500B888AD /* Ejercicio002.m */,
 				FC46AE842FC8254800B888AD /* Ejercicios.h */,
 				FCFA99A32FE052B0009231B9 /* Ejercicio003.m */,
+				FC7B13752FE3B19F00A8899C /* Ejercicio004.m */,
 			);
 			path = "code-gym";
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 			files = (
 				FC46AE7B2FC820C700B888AD /* main.m in Sources */,
 				FCFA99A42FE052B0009231B9 /* Ejercicio003.m in Sources */,
+				FC7B13762FE3B19F00A8899C /* Ejercicio004.m in Sources */,
 				FC46AE822FC8215400B888AD /* Ejercicio001.m in Sources */,
 				FC46AE862FC82B3500B888AD /* Ejercicio002.m in Sources */,
 			);
