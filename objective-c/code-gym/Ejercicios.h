@@ -9,12 +9,15 @@
 @interface Ejercicio001 : NSObject
 + (void)ejecutar;
 @end
+
 @interface Ejercicio002 : NSObject
 + (void)ejecutar;
 @end
+
 @interface Ejercicio003 : NSObject
 + (void)ejecutar;
 @end
+
 @interface Ejercicio004 : NSObject
 + (void)ejecutar;
 @end
