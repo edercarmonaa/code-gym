@@ -48,5 +48,6 @@ CodeGym/
 │
 ├── Objective-C/
 ├── SQL/
-│
+├── Java/
+├── Solutions/Java/
 └── README.md
